@@ -1,0 +1,39 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Part V: Investigation 29</title>
+<link rel="stylesheet" href="../CSS/dataanal.css" />
+</head>
+<body>
+<h2>Part V. Ways to Draw Conclusions From Data</h2>
+
+<h3>Investigation 29: Significance Testing</h3>
+
+<p>Our approach in <a href="investigation2628.html#Inv28">Investigation 28</a> suggests we can use a confidence interval to decide whether a known value is consistent with our results, a process that we call significance testing and that we carry out a bit more formally than suggested by <a href="investigation2628.html#Inv28">Investigation 28</a>. To illustrate the process, we will use the data from <a href="investigation06.html#Table2">Table 2</a> for the bags of M&amp;Ms purchased at Target and evaluate whether the mean net weight for these samples is consistent with the stated net weight of 1.69 oz (47.9 g).</p>
+
+<p>To begin, we summarize the experimental results for our sample, which in this case is a mean of 49.52 g and a standard deviation of 1.649 g for \(n=10\) samples. Next, we state our problem in the form of a yes/no question, the answers to which we define using a null hypothesis \(\left( H_{ 0 } \right)\) and an alternative hypothesis \(\left( H_{ A } \right)\); for example, for this problem our yes/no question is “Is the mean of the samples consistent with the stated net weight of 1.69 oz?,” which we define as</p>
+
+<center><p>\({ H }_{ 0 }:\overline { x } =\mu\) (yes)</p></center>
+
+<center><p>\({ H }_{ A }:\overline { x } \neq \mu\) (no)</p></center>
+
+<p>where \(\overline { x } \) is 49.52 g and \(\mu\) is 47.9 g. To evaluate the two hypotheses, we rewrite the equation for the confidence interval so that we can solve for \(t\)</p>
+
+<div class="equation">\[t=\frac { \left| \overline { x } -\mu  \right| \sqrt { n }  }{ s } =\frac { \left| 49.52-47.9 \right| \sqrt { 10 }  }{ 1.649 } =3.087\]</div>
+
+<p>Finally, we compare this experimental value of \(t\) to the critical values of \(t\) for the correct number of degrees of freedom (in this case, \(\nu =n-1=10-1=9\)). From <a href="appendix3.html">Appendix 3</a> we see that \(t\left( \alpha ,\nu  \right) \) is 1.833 for a 90% confidence interval (an \(\alpha\) of 0.10), 2.262 for a 95% confidence interval (an \(\alpha\) of 0.05), 2.821 for a 98% confidence interval (an \(\alpha\) of 0.02), and 3.250 for a 99% confidence interval (an \(\alpha\) of 0.01). Our experimental value for \(t\) of 3.087 falls between the critical values for the 98% and the 99% confidence interval; if we are willing to accept an uncertainty of 1–2%, then we can reject the null hypothesis and accept the alternative hypothesis, concluding that the mean of 49.52 g is not consistent with the stated net weight of 1.69 oz. We call this a \(t\)-test of \(\overline { x } \) vs. \(\mu\).</p>
+
+<a name="Inv29"></a><p class="investigation"><strong>Investigation 29.</strong> In 1996, Mars, the manufacturer of M&amp;Ms, reported the following distribution for the colors of plain M&amp;Ms: 30% brown, 20% red, 20% yellow, 10% blue, 10% green, and 10% orange. Pick any one color of M&amp;Ms and, using the data in <a href="investigation06.html#Table2">Table 2</a>, calculate the percentage of that color in each of the 30 samples. Report the mean and the standard deviation for your color and use a \(t\)-test to determine whether your sample’s mean is consistent with the result reported by Mars. Gather results for the remaining five colors from other students and discuss your pooled results. Assuming that the distribution of colors reported by Mars is correct, what can you conclude about the manufacturing process.</p>
+
+<nav>
+<ul class="navigate">
+<li><a href="investigation2628.html">back</a></li>
+<li><a href="TOC.html">table of contents</a></li>
+<li><a href="investigation30.html">next</a></li>
+</ul>
+</nav>
+
+</body>
+</html>

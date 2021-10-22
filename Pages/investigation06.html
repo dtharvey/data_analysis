@@ -1,0 +1,117 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Part II: Investigation 6</title>
+<link rel="stylesheet" href="../CSS/dataanal.css" />
+</head>
+<body>
+<h2>Part II. Ways to Visualize Data</h2>
+
+<h3>Investigation 6: Box and Whisker Plots and Dot Plots</h3>
+
+<p>Suppose we are interested in characterizing 1.69-oz (47.9-g) packages of plain M&amp;Ms. We obtain 30 bags (ten from each of three stores) and, for each bag, report the number of blue, brown, green, orange, red, and yellow M&amp;Ms—for yellow, the number in parentheses is the number of yellow M&amp;Ms in the first five drawn from the bag—and their combined net weight. Table 2 summarizes the data for the last six samples. The full set of data for all 30 samples is available as a separate <a href="../Data/MMdata.xlsx">spreadsheet</a> or <a href="../Data/MMdata.RData">R</a> file.</p>
+
+<center>
+<a name="Table2"></a>
+<table>
+<thead>
+<caption>Table 2. Source, Distribution, and Net Weight of  M&amp;Ms</caption>
+<tr>
+<th>bag id</th>
+<th>store</th>
+<th>blue</th>
+<th>brown</th>
+<th>green</th>
+<th>orange</th>
+<th>red</th>
+<th>yellow</th>
+<th>net weight (g)</th>
+</tr>
+<tr>
+<td>25</td>
+<td>CVS</td>
+<td><span class="place_holder">0</span>7</td>
+<td>13</td>
+<td><span class="place_holder">0</span>0</td>
+<td><span class="place_holder">0</span>4</td>
+<td>15</td>
+<td>16 (2)</td>
+<td>48.212</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Target</td>
+<td><span class="place_holder">0</span>6</td>
+<td>15</td>
+<td><span class="place_holder">0</span>1</td>
+<td>13</td>
+<td>10</td>
+<td>14 (1)</td>
+<td>51.682</td>
+</tr>
+<tr>
+<td>27</td>
+<td>CVS</td>
+<td><span class="place_holder">0</span>5</td>
+<td>17</td>
+<td><span class="place_holder">0</span>6</td>
+<td><span class="place_holder">0</span>4</td>
+<td><span class="place_holder">0</span>8</td>
+<td>19 (1)</td>
+<td>50.802</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Kroger</td>
+<td><span class="place_holder">0</span>1</td>
+<td>21</td>
+<td><span class="place_holder">0</span>6</td>
+<td><span class="place_holder">0</span>5</td>
+<td>19</td>
+<td>14 (0)</td>
+<td>49.055</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Target</td>
+<td><span class="place_holder">0</span>4</td>
+<td>12</td>
+<td><span class="place_holder">0</span>6</td>
+<td><span class="place_holder">0</span>5</td>
+<td>13</td>
+<td>14 (2)</td>
+<td>46.577</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Kroger</td>
+<td>15</td>
+<td><span class="place_holder">0</span>8</td>
+<td><span class="place_holder">0</span>9</td>
+<td><span class="place_holder">0</span>6</td>
+<td>10</td>
+<td><span class="place_holder">0</span>8 (1)</td>
+<td>48.317</td>
+</tr>
+</thead>
+</table>
+</center>
+
+<p>Having collected some data, our next step is to examine it for possible problems, such as missing values or errors introduced when we recorded the data, or to identify important variables and interesting patterns or trends within or between these variables. Although this information is embedded within the data itself, often it is difficult to see it when the data is displayed as a table, particularly if the data set is large in size. Instead, we use one or more simple visualizations of the data.</p>
+
+<p>Two simple visualizations are box and whisker plots and dot plots, examples of which are shown in Figure 1 using the data for yellow M&amp;Ms. Note that neither plot has meaningful information along the <em>y</em>-axis as the vertical dimension simply helps us visualize the data. The vertical distribution of points in the dot plot, for example, is the result of jittering, which offsets samples that share a com-mon value so that, we hope, each appears as a distinct point.</p>
+
+<a name="Fig1"></a>
+<center><iframe width="800" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~dtharvey/362.embed?link=false"></iframe></center>
+
+<a name="Inv06"></a><p class="investigation"><strong>Investigation 6.</strong> Use the dot plot in Figure 1 to deduce the general structure of a box and whisker plot, giving particular attention to the position along the <em>x</em>-axis of the three vertical lines that make up the yellow box and the two vertical lines that make up the whiskers on either side of the yellow box. You might begin by tabulating the number of samples that fall to the left of the box, that fall within the box, including its boundaries, and that fall to the right of the box, and the number of samples that lie to the left and to the right of line inside the box.</p>
+
+<nav>
+<ul class="navigate">
+<li><a href="investigation0405.html">back</a></li>
+<li><a href="TOC.html">table of contents</a></li>
+<li><a href="investigation0708.html">next</a></li>
+</ul>
+</nav>
+<hr />
+</body>
+</html>

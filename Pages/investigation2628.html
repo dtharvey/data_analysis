@@ -1,0 +1,49 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Part V: Investigations 26-28</title>
+<link rel="stylesheet" href="../CSS/dataanal.css" />
+</head>
+<body>
+<h2>Part V. Ways to Draw Conclusions From Data</h2>
+
+<h3>Investigations 26-28: Confidence Intervals</h3>
+
+<p>In <a href="investigation18.html">Part IV</a> we noted that when a population is normally distributed, the probability of obtaining a particular result for any single sample is determined by that result’s area under the normal distribution curve defined by the population’s mean and standard deviation. For example, in <a href="investigation2225.html#Inv24">Investigation 24</a> we showed that for 1.69-oz bags of plain M&amp;Ms, 22.8% have a net weight less than 1.69 oz if the population’s mean is 48.98 g and its standard deviation is 1.433 g.</p>
+
+<p>Suppose we select a single sample from this population: What can we predict about the net weight of M&amp;Ms in that sample? Rearranging our equation for \(z\), we find that</p>
+
+<div name="equation">\[x=\mu \pm z\sigma \]</div>
+
+<p>We call this equation a confidence interval because the value we choose for \(z\) defines the probability (our confidence) that the result for a single sample is in the range \(x=\mu \pm z\sigma \).</p>
+
+<a name="Inv26"></a><p class="investigation"><strong>Investigation 26.</strong> A \(z\) of 1.96 corresponds to a 95% confidence interval. Using <a href="appendix2.html">Appendix 2</a>, show that this is correct. What value of \(z\) corresponds to a 90% confidence inteval, and what value of \(z\) corresponds to a 99% confidence inteval? Report the 90%, the 95% and the 99% confidence intervals for the net weight of a single 1.69-oz bag of plain M&amp;Ms drawn from a population for which \(\mu\) is 48.98 g and \(\sigma\) is 1.433 g. For the data in <a href="investigation06.html#Table2">Table 2</a>, how many of the 30 samples have net weights that fall outside of the 90% confidence interval? Does this result make sense given your understanding of a confidence interval?</p>
+
+<p>In Investigation 26 we calculated the confidence interval for a single sample based on the properties of the population from which we obtained the sample. If we draw several replicate samples from this population and calculate their mean, , then the confidence interval becomes</p>
+
+<div class="equation">\[\overline { x } =\mu \pm \frac { z\sigma  }{ \sqrt { n }  } \]</div>
+
+<p>where \(n\) is the number of samples.</p>
+
+<a name="Inv27"></a><p class="investigation"><strong>Investigation 27.</strong> Suppose we draw four 1.69-oz bags of M&amp;Ms from a population for which \(\mu\) is 48.98 g and \(\sigma\) is 1.433 g. What are the 90%, the 95% and the 99% confidence intervals for the mean, \(\overline { x } \), of these samples? Prepare a plot that shows how \(n\) affects the width of the 95% confidence interval, expressed as \(\pm z\sigma \sqrt { n } \) and discuss the significance of your plot. Suppose we wish to decrease the confidence interval by a factor of \(3\times \) solely by increasing the number of samples taken. If the original confidence interval is based on the mean of four samples, how many additional samples must we acquire?</p>
+
+<p>In both Investigation 26 and Investigation 27 we attempt to predict a property of a sample based on a population with know values of \(\mu\) and \(\sigma\). For most practical analytical problems, however, we need to work in the opposite direction, using the sample’s mean,\(\overline { x } \), and its standard deviation, \(s\), to predict the population’s mean, \(\mu\). To do this, we make three modifications to our equation for the confidence interval: we rewrite the equation so that it expresses \(\mu\) in terms of \(\overline { x } \); we replace the population’s standard deviation, \(\sigma\), with the sample’s standard deviation, \(s\); and we replace \(z\) with the variable \(t\), where we define \(t\) such that, for any confidence level, \(t\ge z\) and the value of \(t\) approaches \(z\) as the number of samples, \(n\), increases.</p>
+
+<div class="equation">\[\mu =\overline { x } \pm \frac { ts }{ \sqrt { n }  } \]</div>
+
+<p>Clearly the value of \(t\) depends on the confidence interval and the number of samples; see <a href="appendix3.html">Appendix 3</a> for further details.</p>
+
+<a name="Inv28"></a><p class="investigation"><strong>Investigation 28.</strong> Our data for 1.69-oz bags of plain M&amp;M includes 30 measurements of the net weight. What are the 90%, the 95% and the 99% confidence intervals for the mean, \(\overline { x } \), of these samples? Using the 99% confidence interval as an example, explain the meaning of this confidence interval. Is the stated net weight of 1.69 oz a reasonable estimate of the true mean for the population of 1.69-oz bags of plain M&amp;M? </p>
+
+<nav>
+<ul class="navigate">
+<li><a href="investigation2225.html">back</a></li>
+<li><a href="TOC.html">table of contents</a></li>
+<li><a href="investigation29.html">next</a></li>
+</ul>
+</nav>
+
+</body>
+</html>

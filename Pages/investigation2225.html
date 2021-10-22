@@ -1,0 +1,45 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Part IV: Investigations 22-25</title>
+<link rel="stylesheet" href="../CSS/dataanal.css" />
+</head>
+<body>
+<h2>Part IV. Ways to Model Data</h2>
+
+<h3>Investigations 22-25: The Normal Distribution</h3>
+
+<p><em>Normal Distribution.</em> The binomial distribution and the Poisson distribution are examples of discrete functions in that they predict the probability of a discrete event, such as finding exactly two green M&amp;Ms in the next bag of M&amp;Ms that we open. Not all data we might collect on M&amp;Ms, however, is discrete.</p>
+
+<a name="Inv22"></a><p class="investigation"><strong>Investigation 22.</strong> Explain why we cannot use the binomial distribution or the Poisson distribution to the net weight of M&amp;Ms in <a href="investigation06.html#Table2">Table 2</a>.</p>
+
+<p>To model the net weight of packages of M&amp;Ms, we use the normal distribution, which gives the probability of obtaining a particular outcome from a population with a known mean, \(\mu\), and a known variance, \({ \sigma  }^{ 2 }\). Mathematically, we express the normal distribution as</p>
+
+<div class="equation">\[P\left( X \right) =\frac { 1 }{ \sqrt { 2\pi { \sigma  }^{ 2 } }  } { e }^{ -{ \left( X-\mu  \right)  }^{ 2 }/2\pi { \sigma  }^{ 2 } }\]</div>
+
+<p>Figure 6 shows the normal distribution curves for \(\mu =0\) and for variances of 25, 100, and 400.</p>
+
+<a name="Fig6"></a><center><iframe width="800" height="600" frameborder="0" scrolling="no" src="https://plot.ly/~dtharvey/334.embed?link=false"></iframe></center>
+
+<a name="Inv23"></a><p class="investigation"><strong>Investigation 23.</strong> Using the curves in Figure 6 as an example, discuss the general features of a normal distribution, giving particular attention to the importance of variance. How do you think the areas under the three curves from \(-\infty \) to \(+\infty\) are related to each other? Why might this be important?</p>
+
+<p>Because the equation for a normal distribution depends solely on the population’s mean, \(\mu\), and variance, \({ \sigma  }^{ 2 }\), the probability that a sample drawn from a population has a value between any two arbitrary limits is the same for all populations. For example, 68.26% of all samples drawn from a normally distributed population will have values within the range \(\mu \pm \sigma \), and only 0.621% will have values greater than \(\mu +2.5\sigma \); see <a href="appendix2.html">Appendix 2</a> for further details.</p>
+
+<a name="Inv24"></a><p class="investigation"><strong>Investigation 24.</strong> Assuming that the mean, \(\overline { x } \), and the standard deviation, \(s\), for the net weight of our samples of M&amp;Ms are good estimates for the population’s mean, \(\mu\), and standard deviation, \(\sigma\), what is the probability that the contents of a 1.69-oz bag of plain M&amp;Ms selected at random will weigh less than the stated net weight of 1.69 oz? Suppose the manufacturer wants to reduce this probability to no more than 5%: How might they accomplish this?</p>
+
+<p>For a binomial distribution, if \(N\times P  \ge 5\) and \(N\times \left( 1-P \right) \ge 5\), then a normal distribution closely approximates a binomial distribution; the same is true for a Poisson distribution when \(\lambda \ge 20\).</p>
+
+<a name="Inv25"></a><p class="investigation"><strong>Investigation 25.</strong> Suppose we arrange to collect samples of plain M&amp;Ms such that each sample contains 330 M&amp;Ms—an amount roughly equivalent to a 10-oz bag of plain M&amp;Ms—drawn from the same population as the data in <a href="investigation06.html#Table2">Table 2</a>. Can we model this data using a normal distribution in place of the binomial distribution or the Poisson distribution? What advantages are there in being able to use the normal distribution? How might you apply this to more practical analytical problems, such as determining the concentration of Pb<sup>2+</sup> in soil?</p>
+
+<nav>
+<ul class="navigate">
+<li><a href="investigation2021.html">back</a></li>
+<li><a href="TOC.html">table of contents</a></li>
+<li><a href="investigation2628.html">next</a></li>
+</ul>
+</nav>
+
+</body>
+</html>

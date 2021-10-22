@@ -1,0 +1,44 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Part III: Investigations 16 and 17</title>
+<link rel="stylesheet" href="../CSS/dataanal.css" />
+</head>
+<body>
+<h2>Part III. Ways to Summarize Data</h2>
+
+<h3>Investigation 16 and 17: Central Tendency and Spread</h3>
+
+<p>Both a box and whisker plot and a histogram suggests that the distribution of results for a single variable has two important features: its center, which presumably lies somewhere in the middle of the data, and its spread, which is suggested by the length of the whiskers in a box and whisker plot, or how quickly or how slowly the counts in a histogram’s bins decrease as we move away from the bin that has the most counts. For our purposes, we will consider two quantitative measures of central tendency—the mean and the median—and four quantitative measures of spread: the variance, the standard deviation, the range, and the interquartile range.</p>
+
+<p><em>Central Tendency.</em> The mean, \(\overline { x }\), is the arithmetic average of all \(n\) of a variable’s results; thus</p>
+
+<div class="equation">\[\overline { x } =\frac { \sum { { x }_{ i } }  }{ n }\]</div> 
+
+<p>where \({ x }_{ i }\) is the result for an individual sample. The median is the middle value when the \(n\) results are ordered by rank from smallest-to-largest. If \(n\) is odd, then the median is the \({ (n+1) }/{ { 2 }^{ th } }\)  value; if \(n\) is even, then the median is the average of the \({ ({ n }/{ 2 }) }^{ th }\) value and the \({ \left( \left( { n }/{ 2 } \right) +1 \right)  }^{ th }\) value.</p>
+
+<a name="Inv16"></a><p class="investigation"><strong>Investigation 16.</strong> Using the data for yellow M&amp;Ms, calculate the mean and the median for each store and discuss your results. If the mean and the median are equal to each other, what might you reasonably conclude about your data? If the mean is larger than the median, or if the mean is smaller than the median, what might you reasonably conclude about your data? A measure of central tendency is considered robust when it is not changed by one or more results that differ substantially from the remaining results. Which measure of central tendency is more robust? Why?</p>
+
+<p><em>Spread.</em> A sample’s variance, \({ s }^{ 2 }\), provides an estimate of the average squared deviation of its \(n\) results relative to its mean; thus</p>
+
+<div class="equation">\[{ s }^{ 2 }=\frac { \sum { { \left( { x }_{ i }-\overline { x }  \right)  }^{ 2 } }  }{ n-1 }\]</div>
+
+<p>where \({ x }_{ i }\) is the result for an individual sample and \(\overline { x }\) is the variable’s mean value. The standard deviation, \(s\), is the square root of the variance.</p>
+
+<p>The range is the difference between the sample’s largest value and its smallest value. A variable’s interquartile range, <em>IQR</em>, spans the middle 50% of its values. To find the <em>IQR</em>, we order the data from smallest-to-largest, and separate it into two equal parts; if the <em>IQR</em> has an odd number of values, then we do not include the median in either part. Next, we find the median for each of the two parts. The IQR is the difference between these two medians. Note: There actually are several methods for calculating the <em>IQR</em>, which differ in how they divide the data into four parts. As you might expect, different methods may result in different values for the <em>IQR</em>. The method described here was used to create the box and whisker plots in <a href="investigation06.html#Fig1">Figure 1</a>, <a href="investigation0911.html#Fig2">Figure 2</a>, and <a href="investigation0911.html#Fig3">Figure 3</a>, where the width of the box is the interquartile range.</p>
+
+<a name="Inv17"></a><p class="investigation"><strong>Investigation 17.</strong> Using the data for yellow M&amp;Ms, calculate the variance, the standard deviation, the range, and the <em>IQR</em> for each store and discuss your results. Is there a relationship between the standard deviation, the range, or the <em>IQR</em>? A measure of spread is considered robust when its value is not changed by one or more values that differ substantially from the remaining values. Which measure of spread—the variance, the standard deviation, the range, or the <em>IQR</em>—is the most robust? Why? Which is the least robust? Why?</p>
+
+<nav>
+<ul class="navigate">
+<li><a href="investigation15.html">back</a></li>
+<li><a href="TOC.html">table of contents</a></li>
+<li><a href="investigation18.html">next</a></li>
+</ul>
+</nav>
+<hr />
+
+</body>
+</html>
